@@ -1,6 +1,7 @@
 #!/bin/bash
 
 export JAVA_HOME=/etc/alternatives/jre_openjdk
+rm /var/run/redis_6379.pid
 cd /opt/redis-stable/utils
 echo -n | ./install_server.sh
 cd /opt/aberowl-meta/aberowl-web
